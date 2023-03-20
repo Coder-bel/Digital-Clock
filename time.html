@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+    #div-date{
+        justify-content: space-evenly;
+        display: flex;
+        width: 400px;
+        margin-left: 70px;
+    }
+    #p-date{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 20px;
+    }
+    #time-div{
+        justify-content: space-evenly;
+        display: flex;
+        width: 400px;
+        margin-left: 70px;
+        display: flex;
+        border: 1px solid lightgrey;
+    }
+    body{
+        background-color: black;
+        padding: 100px;
+    }
+    .divs{
+        background-color: black;
+        width: 50%;
+        margin: auto;
+        color: red;
+        box-shadow: 0px 0px 60px lightgrey;
+        padding: 20px;
+        border-style: groove solid lightgrey;
+        
+    }
+</style>
+<body>    
+    <div class="divs" style="margin-top: 20px;">
+        <h1 class="text-center m-4">Date-Time Local</h1>
+        <hr style="color: lightgrey;">
+        <div id="div-container">
+            <div id="div-date">
+                <p id="p-date">DATE</p>
+                <p id="p-date">MONTH</p>
+                <p id="p-date">YEAR</p> 
+            </div>
+            <div id="time-div">
+                <h1><span id="getday"></span></h1>
+                <h1><span id="getmonth"></span></h1>
+                <h1><span id="getyear"></span></h1>
+            </div>
+            <div id="div-date">
+                <p id="p-date">Hours</p>
+                <p id="p-date">Minutes</p>
+                <p id="p-date">Secs</p> 
+            </div>
+            <div id="time-div">
+                <h1><span id="gethr"></span></h1>
+                <h1><span>:</span></h1>
+                <h1><span id="getmins"></span></h1>
+                <h1><span>:</span></h1>
+                <h1><span id="getsec"></span></h1>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="time.js"></script>
